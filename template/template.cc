@@ -42,6 +42,18 @@ inline bool check(int ex, int ey, int x, int y) {
   return check(0, ex, 0, ey, x, y);
 }
 
+std::vector<std::string> split(const std::string& s, char delim) {
+  std::vector<std::string> ret;
+  std::stringstream ss(s);
+  std::string tmp;
+
+  while (std::getline(ss, tmp, delim)) {
+    ret.push_back(tmp);
+  }
+
+  return ret;
+}
+
 inline void init() {
   cin.tie(0);
   std::ios::sync_with_stdio(false);
