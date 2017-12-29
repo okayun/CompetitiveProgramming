@@ -23,6 +23,7 @@ using std::endl;
 #define INF ((1LL << 31) - 1)
 #define INFLL ((1LL << 62) - 1)
 #define MOD (ll)(1e9+7)
+#define EPS 1e-10
 #define repi(i,j,n) for(int i = (j); i < (n); ++i)
 #define rep(i,n) repi(i,0,n)
 #define rrep(i,n) for(int i = n; i >= 0; --i)
