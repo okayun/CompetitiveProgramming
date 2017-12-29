@@ -11,6 +11,8 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+#include <cmath>
+#include <cassert>
 
 using ll = long long;
 //typedef long long ll;
