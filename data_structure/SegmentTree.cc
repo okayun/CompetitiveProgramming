@@ -17,7 +17,7 @@ private:
   int n;
   T init_;
   std::vector<T> seg;
-  std::function<T(T, T)> compare = [](T a, T b){ return (a < b) ? a : b; };
+  std::function<T(T, T)> compare = [](T a, T b){ return (a < b) ? a : b; }; // min
 
   int size (int N) {
     int ret;
@@ -61,7 +61,7 @@ public:
 };
 
 int main() {
-  SegmentTree<std::pair<int, int>> segtree;
+  SegmentTree<std::pair<int, int> > segtree;
   segtree.Init(8, {INF, INF});
 
   for (int i = 0; i < 8; ++i) {
