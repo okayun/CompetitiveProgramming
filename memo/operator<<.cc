@@ -9,7 +9,7 @@ using std::cout;
 using std::cerr;
 using std::endl;
 
-// operator << の使い方
+/* operator << の使い方 */
 
 template <typename T>
 std::ostream& operator << (std::ostream& os, std::vector<T>& v) {
