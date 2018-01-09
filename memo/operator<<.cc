@@ -37,6 +37,8 @@ std::ostream& operator << (std::ostream& os, std::pair<T, U>& p) {
 	return os;
 }
 
+
+
 int main() {
 	std::vector<std::vector<int> > a;
 	std::vector<int> v{ 1, 2, 3 };
