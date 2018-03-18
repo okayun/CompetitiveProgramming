@@ -3,6 +3,10 @@
 #include <algorithm>
 #include <functional>
 
+/**
+ * 動作確認 >> まだ <<
+*/
+
 template <typename T>
 class SegmentTree {
 private:
