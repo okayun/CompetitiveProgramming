@@ -36,7 +36,8 @@ ll C (ll n, ll r) {
 // nPr
 ll P (ll n, ll r) {
   if (n < r || r < 0) return 0LL;
-  return (factorial(n) * inverse(factorial(r))) % MOD;
+  if (n == r) return factorial(n) % MOD;
+  return (factorial(n) * inverse(factorial(n - r))) % MOD;
 }
 
 int main() {
