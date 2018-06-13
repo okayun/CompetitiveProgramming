@@ -15,14 +15,14 @@ public:
   }
   
   // 現在のsize_を返す
-  int size() { return size_; }
+  int Size() { return size_; }
   
   // 親を返す
-  int root(int x) { return (par[x] == x) ? x : par[x] = root(par[x]); }
+  int Root(int x) { return (par[x] == x) ? x : par[x] = Root(par[x]); }
   
   // ２つの頂点を連結する
-  void unite(int x, int y) {
-    x = root(x), y = root(y);
+  void Unite(int x, int y) {
+    x = Root(x), y = Root(y);
     if (x == y) return;
     if (rank[x] < rank[y]) {
       par[x] = y;
@@ -33,7 +33,7 @@ public:
   }
   
   // 親が同じかを判定する
-  bool same(int x, int y) { return root(x) == root(y); }
+  bool Same(int x, int y) { return Root(x) == Root(y); }
 };
 
 int main() {
