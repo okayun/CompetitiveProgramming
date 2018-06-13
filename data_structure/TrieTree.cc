@@ -22,7 +22,7 @@ private:
 public:
   TrieTree() {}
 
-  void make(char *t) {
+  void Make(char *t) {
       Node *r = &node;
       for (int i = 0; t[i]; ++i) {
           char c = t[i];
@@ -31,7 +31,7 @@ public:
       }
   }
 
-  bool find(char *t) {
+  bool Find(char *t) {
       Node *r = &node;
       for (int i = 0; t[i]; ++i) {
           char c = t[i];
@@ -47,10 +47,10 @@ public:
 int main() {
   char str[] = "otyaduke", str2[] = "ostream", tmp[] = "ok", tmp2[] = "otya";
   TrieTree t;
-  t.make(str);
-  t.make(str2);
-  cout << t.find(tmp) << endl;
-  cout << t.find(tmp2) << endl;
+  t.Make(str);
+  t.Make(str2);
+  cout << t.Find(tmp) << endl;
+  cout << t.Find(tmp2) << endl;
 
   return 0;
 }
